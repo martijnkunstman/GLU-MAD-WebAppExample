@@ -8,12 +8,9 @@
 
 [4.] Add demo content
 
+[5.] Add to homescreen for Chrome on Android and Add for iOS web apps.
 
-
-
-
-
-
+(view project online http://www.kunstman.nl/glu/mad/webappexample/)
 
 
 
