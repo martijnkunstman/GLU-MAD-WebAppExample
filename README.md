@@ -2,6 +2,8 @@
 
 [1.] Create project from boilerplate (https://html5boilerplate.com/mobile/) v4.1.2
 
+[2.] Disable/comment Google Analytics script in index.html
+
 
 
 
