@@ -4,6 +4,8 @@
 
 [2.] Disable/comment Google Analytics script in index.html
 
+[3.] Add jQuery Mobile from CDN
+
 
 
 
