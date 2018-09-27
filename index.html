@@ -1,73 +1,154 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-        <meta http-equiv="cleartype" content="on">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta http-equiv="cleartype" content="on">
 
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-        <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
-        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
 
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
-        <meta name="msapplication-TileColor" content="#222222">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
 
-        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
-        <!--
-        <link rel="canonical" href="http://www.example.com/" >
-        -->
+    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/" >
+    -->
 
-        <!-- Add to homescreen for Chrome on Android -->
-        <!--
-        <meta name="mobile-web-app-capable" content="yes">
-        -->
+    <!-- Add to homescreen for Chrome on Android -->
+    <!--
+    <meta name="mobile-web-app-capable" content="yes">
+    -->
 
-        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
-        <!--
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="">
-        -->
+    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    <!--
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    -->
 
-        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
-        <!--
-        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-        -->
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+    <!--
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+    -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-    </head>
-    <body>
+    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+</head>
+<body>
 
-        <!-- Add your site or application content here -->
+<!-- Add your site or application content here -->
 
-        <script src="js/vendor/jquery-2.1.0.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<div data-role="page" class="preview ui-shadow swatch">
+    <div class="ui-header ui-bar-a" data-swatch="a" data-theme="a" data-form="ui-bar-a" data-role="header" role="banner">
+        <a class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon" data-role="button" role="button"> Home </a>
+        <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">Test page</h1>
+        <a class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-form="ui-icon" data-role="button" role="button"> Navigation </a>
+    </div>
 
-        <script src="js/helper.js"></script>
-        <script src="js/main.js"></script>
+    <div class="ui-content ui-page-theme-a" data-form="ui-page-theme-a" data-theme="a" role="main">
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            /*
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-            */
-        </script>
-    </body>
+        <div data-theme="a" data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all">
+            <p>My test page</p>
+            <p>Sample text and <a data-form="ui-link-a" href="#" data-theme="a" class="ui-link">links</a>.</p>
+            <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">Show popup...</a>
+        </div>
+
+        <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+            <div data-role="header" data-theme="a">                    
+                <h1>Show popup</h1>                    
+            </div>                
+            <div role="main" class="ui-content">                        
+                <h3 class="ui-title">Hello!!!</h3>                    
+                <p>More text here....</p>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Option 1</a>         
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Option 2</a>
+            </div>
+        </div>
+
+        <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <li data-role="list-divider" data-theme="a" data-swatch="a" data-form="ui-bar-a" role="heading" class="ui-li-divider ui-bar-a ui-first-child">List Header</li>
+            <li data-form="ui-body-a" data-swatch="a" data-theme="a" class="ui-li-static ui-body-a">Read-only list item</li>
+            <li class="ui-last-child">
+                <a class="ui-btn-a ui-btn ui-btn-icon-right ui-icon-carat-r" data-form="ui-btn-up-a" data-swatch="a" data-theme="a" href="#">Linked list item</a>
+            </li>
+        </ul>
+
+        <div data-role="fieldcontain" class="ui-field-contain">
+            <fieldset data-role="controlgroup" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all">
+                <div class="ui-controlgroup-controls ">
+                    <div class="ui-radio">
+                        <label for="radio-choice-1-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-btn-icon-left ui-radio-on ui-first-child">Radio 1</label><input data-theme="a" type="radio" name="radio-choice-a" id="radio-choice-1-a" value="choice-1" checked="checked">
+                    </div>
+                    <div class="ui-radio">
+                        <label for="radio-choice-2-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-btn-icon-left ui-radio-on ui-first-child">Radio 2</label><input data-theme="a" type="radio" name="radio-choice-a" id="radio-choice-2-a" value="choice-2">
+                    </div>
+                    <div class="ui-checkbox">
+                        <label for="checkbox-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-btn-icon-left ui-checkbox-on ui-last-child">Checkbox</label><input data-theme="a" type="checkbox" name="checkbox-a" id="checkbox-a" checked="checked">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div data-role="fieldcontain" class="ui-field-contain">
+            <fieldset data-role="controlgroup" data-type="horizontal" class="ui-controlgroup ui-controlgroup-horizontal ui-corner-all">
+                <div class="ui-controlgroup-controls ">
+                    <div class="ui-radio">
+                        <label for="radio-view-a-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-radio-on ui-btn-active ui-first-child">On</label><input data-theme="a" type="radio" name="radio-view-a" id="radio-view-a-a" value="list" checked="checked">
+                    </div>
+                    <div class="ui-radio">
+                        <label for="radio-view-b-a" data-form="ui-btn-up-a" class="ui-btn ui-corner-all ui-btn-a ui-radio-off ui-last-child">Off</label><input data-theme="a" type="radio" name="radio-view-a" id="radio-view-b-a" value="grid">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="ui-field-contain">
+                <select name="select-custom-1" id="select-custom-1" data-native-menu="false">         <option value="1">The 1st Option</option>         <option value="2">The 2nd Option</option>         <option value="3">The 3rd Option</option>         <option value="4">The 4th Option</option>     </select>
+        </div>
+
+        <div class="ui-field-contain">
+            <input type="text" data-theme="a" value="Text Input" class="input" data-form="ui-body-a">
+        </div>
+
+
+        <div data-role="fieldcontain" class="ui-field-contain">
+            <input type="number" data-type="range" name="slider" value="50" min="0" max="100" data-form="ui-body-a" data-theme="a" data-highlight="true" class="ui-shadow-inset ui-body-a ui-corner-all ui-slider-input">
+        </div>
+
+        <button data-icon="star" data-theme="a" data-form="ui-btn-up-a" class=" ui-btn ui-btn-a ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Button</button>
+    </div>
+</div>
+
+<script src="js/vendor/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="js/helper.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    /*
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+    */
+</script>
+</body>
 </html>

@@ -6,6 +6,8 @@
 
 [3.] Add jQuery Mobile from CDN
 
+[4.] Add demo content
+
 
 
 
